@@ -618,13 +618,19 @@ function EditTitleModal({ item, onSave, onClose }) {
             : <div className="poster-prev empty"><Icon name="star" size={20}/></div>}
           <div className="poster-upload-actions">
             <label className="btn btn-soft btn-sm pick-img">
-              {poster?'trocar imagem':'escolher imagem'}
+              {poster?'trocar imagem':'do dispositivo'}
               <input type="file" accept="image/*" onChange={onFile} style={{display:'none'}}/>
             </label>
             {poster && <button className="btn btn-ghost btn-sm" onClick={()=>setPoster('')}>remover</button>}
-            <p className="muted" style={{fontSize:'.72rem',margin:'.2rem 0 0'}}>opcional · do seu dispositivo</p>
           </div>
         </div>
+        <input
+          value={poster.startsWith('data:') ? '' : poster}
+          placeholder="assets/posters/nome-do-filme.jpg"
+          onChange={e => setPoster(e.target.value)}
+          style={{marginTop:'.5rem'}}
+        />
+        <p className="muted" style={{fontSize:'.72rem',margin:'.3rem 0 0'}}>cole o caminho da pasta <b>assets/posters/</b> ou uma URL</p>
       </div>
       <div className="field">
         <label>Tipo</label>
