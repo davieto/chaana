@@ -15,8 +15,8 @@ const now = new Date();
 const y = now.getFullYear();
 
 const SEED_RATINGS = [
-  { id:uid(), title:'O Túmulo dos Vagalumes', type:'filme', rating:5, section:'watched', poster:'' },
-  { id:uid(), title:'Suzume',                 type:'filme', rating:5, section:'watched', poster:'' },
+  { id:uid(), title:'O Túmulo dos Vagalumes', type:'filme', rating:5, section:'watched', poster:'assets/posters/tumulo-dos-vagalumes.jpg' },
+  { id:uid(), title:'Suzume',                 type:'filme', rating:5, section:'watched', poster:'assets/posters/suzume.jpg' },
   { id:uid(), title:'Mortal Kombat',          type:'filme', rating:3, section:'watched', poster:'' },
   { id:uid(), title:'Mortal Kombat 2',        type:'filme', rating:4, section:'watched', poster:'' },
   { id:uid(), title:'House of the Dragon',    type:'serie', rating:0, section:'waiting', poster:'' },
@@ -26,7 +26,7 @@ const SEED_RATINGS = [
   { id:uid(), title:'Korra (Dublado)',         type:'serie', rating:0, section:'waiting', poster:'' },
   { id:uid(), title:'A Noiva Cadáver',        type:'filme', rating:0, section:'waiting', poster:'' },
   { id:uid(), title:'Coco',                   type:'filme', rating:0, section:'waiting', poster:'' },
-  { id:uid(), title:'Koe no Katachi',         type:'filme', rating:0, section:'waiting', poster:'' },
+  { id:uid(), title:'Koe no Katachi',         type:'filme', rating:0, section:'waiting', poster:'assets/posters/koe-no-katachi.jpg' },
   { id:uid(), title:'Your Name',              type:'filme', rating:0, section:'waiting', poster:'' },
   { id:uid(), title:'Tenki no Ko',            type:'filme', rating:0, section:'waiting', poster:'' },
   { id:uid(), title:'5 Centímetros por Segundo', type:'filme', rating:0, section:'waiting', poster:'' },
